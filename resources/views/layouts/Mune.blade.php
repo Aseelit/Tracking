@@ -238,7 +238,7 @@
 
     {{--  tracking  --}}
     <li class="nav-item">
-      @can('project-list')
+      @can('tracking-list')
       <a class="d-flex align-items-center" href="#"
         ><i data-feather="shield"></i
         ><span
@@ -249,7 +249,7 @@
         @endcan
 
       <ul class="menu-content">
-        @can('project-list')
+        @can('tracking-list')
           
         <li>
           <a
@@ -262,7 +262,7 @@
           >
         </li>
         @endcan
-        @can('project-create')
+        @can('tracking-create')
         <li>
           <a
             class="d-flex align-items-center"

@@ -7,7 +7,6 @@ use App\Models\DevelopmentStagesProject;
 use App\Models\Project;
 use App\Models\Stages;
 use App\Models\User;
-use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
@@ -52,7 +51,7 @@ class ProjectController extends Controller
              $dev->save();
         }
        
-        notify()->success('Laravel Notify is awesome!');
+        // notify()->success('Laravel Notify is awesome!');
 
         return redirect()->route('project.index');
     }
