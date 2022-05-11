@@ -90,7 +90,7 @@
                 </g>
               </g></svg
           ></span>
-          <h2 class="brand-text">Fahd</h2></a
+          <h2 class="brand-text">Tracking</h2></a
         >
       </li>
       <li class="nav-item nav-toggle">
@@ -197,38 +197,38 @@
       
     
       <li class="nav-item">
-        @can('soical-list')
+        @can('project-list')
         <a class="d-flex align-items-center" href="#"
           ><i data-feather="shield"></i
           ><span
             class="menu-title text-truncate"
             data-i18n="Roles &amp; Permission"
-            >Social Media</span
+            >Project</span
           ></a>
           @endcan
 
         <ul class="menu-content">
-          @can('soical-list')
+          @can('project-list')
             
           <li>
             <a
               class="d-flex align-items-center"
-              href="{{ route('Soical.index') }}"
+              href="{{ route('project.index') }}"
               ><i data-feather="circle"></i
               ><span class="menu-item text-truncate" data-i18n="Roles"
-                >List Social Media</span
+                >List Project</span
               ></a
             >
           </li>
           @endcan
-          @can('soical-create')
+          @can('project-create')
           <li>
             <a
               class="d-flex align-items-center"
-              href="{{ route('Soical.create') }}"
+              href="{{ route('project.create') }}"
               ><i data-feather="circle"></i
               ><span class="menu-item text-truncate" data-i18n="Permission"
-                >Create Social Media</span
+                >Create Project</span
               ></a
             >
           </li>
@@ -236,9 +236,49 @@
         </ul>
       </li>
 
-    
-     
+    {{--  tracking  --}}
+    <li class="nav-item">
+      @can('project-list')
+      <a class="d-flex align-items-center" href="#"
+        ><i data-feather="shield"></i
+        ><span
+          class="menu-title text-truncate"
+          data-i18n="Roles &amp; Permission"
+          >Tracking</span
+        ></a>
+        @endcan
+
+      <ul class="menu-content">
+        @can('project-list')
+          
+        <li>
+          <a
+            class="d-flex align-items-center"
+            href="{{ route('tracking.index') }}"
+            ><i data-feather="circle"></i
+            ><span class="menu-item text-truncate" data-i18n="Roles"
+              >List Tracking</span
+            ></a
+          >
+        </li>
+        @endcan
+        @can('project-create')
+        <li>
+          <a
+            class="d-flex align-items-center"
+            href="{{ route('tracking.create') }}"
+            ><i data-feather="circle"></i
+            ><span class="menu-item text-truncate" data-i18n="Permission"
+              >Create Tracking</span
+            ></a
+          >
+        </li>
+        @endcan
+      </ul>
+    </li>
+
     </ul>
+    
   </div>
 </div>
 {{-- <!-- END: Main Menu--> --}}

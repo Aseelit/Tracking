@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ProjectFactory extends Factory
@@ -16,14 +17,12 @@ class ProjectFactory extends Factory
         return [
             'name' => $this->faker->name,
             'descrbation' => $this->faker->paragraph,
-            'path' => 'Project/web/home',
+            'path' => 'project/04.jpg',
             'user_id' => 1,
-            'satus'=>'stoping',
-            'start_date',$this->faker->date,
-            'end_date',$this->faker->date,
-            'postion' => 'saudeya arbia',
-            't' => 15426763287,
-            'w' => 15426763287
+            'status'=>'stoping',
+            'start_date',2022-05-11,
+            'end_date',2022-05-12,
+            'address' => $this->faker->address,
         ];
     }
 }

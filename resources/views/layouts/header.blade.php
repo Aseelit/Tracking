@@ -45,14 +45,14 @@
 		  class="dropdown-menu dropdown-menu-end"
 		  aria-labelledby="dropdown-user"
 		>
-		  <a class="dropdown-item" href="{{ route('profile.index') }}"
+		  <a class="dropdown-item" href="#"
 			><i class="me-50" data-feather="user"></i>my Profile</a
 		  >
 		  
 		  
 		
 		  <div class="dropdown-divider"></div>
-	<a class="dropdown-item"  href="{{ route('logout') }}"
+	<a class="dropdown-item"  href="#"
 		  onclick="event.preventDefault();
 						document.getElementById('logout-form').submit();"
 			>

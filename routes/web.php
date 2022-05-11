@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\ProfailController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SocialMediaController;
+use App\Http\Controllers\TrackingController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -30,6 +32,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
     Route::resource('Soical', SocialMediaController::class);
-    Route::resource('profile', ProfailController::class);
+    Route::resource('project', ProjectController::class);
+    Route::resource('tracking', TrackingController::class);
+    Route::get('get_stages_project/{project_id}',[TrackingController::class,'getstages']);
 
 });

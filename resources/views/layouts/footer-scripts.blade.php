@@ -12,6 +12,9 @@
     <script src="{{ asset('app-assets/js/scripts/customizer.min.js') }}"></script>
     {{-- <!-- END: Theme JS--> --}}
     
+    <script src="{{ asset('app-assets/css-rtl/plugins/maps/map-leaflet.min.css') }}"></script>
+    <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+    @notifyJs
     
 
     {{-- <!-- BEGIN: Page JS--> --}}
@@ -24,3 +27,4 @@
         }
       })
     </script>
+

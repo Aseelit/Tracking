@@ -32,5 +32,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style-rtl.css') }}">
     {{-- <!-- END: Custom CSS--> --}}
   
+    {{--  toaster  --}}
+    <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
 
-	
+
+	@notifyCss

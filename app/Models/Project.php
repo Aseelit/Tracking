@@ -16,8 +16,5 @@ class Project extends Model
         return $this->belongsTo(User::class,'user_id');
     }
 
-    public function catogery()
-    {
-        return $this->belongsTo(Catogry::class,'catogrie_id');
-    }
+   
 }

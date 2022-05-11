@@ -30,7 +30,12 @@ class PermissionTableSeeder extends Seeder
             'soical-list',
             'soical-create',
             'soical-edit',
-            'soical-delete'
+            'soical-delete',
+            'project-list',
+            'project-create',
+            'project-delete',
+            'project-edit',
+
         ];
 
         foreach ($permissions as $permission) {

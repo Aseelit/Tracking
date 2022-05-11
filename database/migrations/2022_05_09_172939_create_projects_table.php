@@ -22,9 +22,9 @@ class CreateProjectsTable extends Migration
             $table->date('start_date');
             $table->date('end_date');
             $table->foreignId('user_id')->nullable()->references('id')->on('users')->cascadeOnDelete();
-            $table->text('postion');
-            $table->text('t');
-            $table->text('w');
+            $table->text('address');
+            // $table->text('t');
+            // $table->text('w');
             $table->timestamps();
         });
     }

@@ -22,6 +22,7 @@ data-col="">
 @include('layouts.Mune')
 
    @yield('content')
+   <x:notify-messages />
 
 @include('layouts.Customizer')
 
